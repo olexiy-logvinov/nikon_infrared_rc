@@ -27,6 +27,11 @@ Assuming you use attiny13 and USBTinyISP programmer, the programming command sho
 avrdude -c usbtiny -p t13 -U flash:w:main.hex -U lfuse:w:0x75:m -U hfuse:w:0xff:m
 
 ---------------------------------------------------
+Photos
+<a href="https://plus.google.com/photos/117505571495792048077/albums/5932092992587317233/5932093048086655938?banner=pwa&authkey=CPyXo6zMwKbrqAE&pid=5932093048086655938&oid=117505571495792048077">1</a> | <a href="https://plus.google.com/photos/117505571495792048077/albums/5932092992587317233/5932093002411086834?banner=pwa&authkey=CPyXo6zMwKbrqAE&pid=5932093002411086834&oid=117505571495792048077">2</a>  | <a href="https://plus.google.com/photos/117505571495792048077/albums/5932092992587317233/5932093014321347186?banner=pwa&authkey=CPyXo6zMwKbrqAE&pid=5932093014321347186&oid=117505571495792048077">3</a>  | <a href="https://plus.google.com/photos/117505571495792048077/albums/5932092992587317233/5932093034974729234?banner=pwa&authkey=CPyXo6zMwKbrqAE&pid=5932093034974729234&oid=117505571495792048077">4</a>
+
+
+---------------------------------------------------
 This project is based on information from the following sources:
 http://www.bigmike.it/ircontrol/
 http://www.sbprojects.com/projects/nikon/index.php
