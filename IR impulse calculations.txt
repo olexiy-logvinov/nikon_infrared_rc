@@ -1,0 +1,25 @@
+Nikon IR control
+
+carrier frequency = 38.4 kHz
+1 wave 1000000/38400 = 26.041(6) us
+halfwave = 13.0208 us
+
+we use attiny13 with internal oscillator set to 4.8 MHz
+
+1 clock cycle
+    1000000 / 4800000 = 0.2083 us
+
+clock cycles in 13.0208 us
+    13.0208/0.2083 = 62.5098 cycles ~ 63
+    
+Nikon IR command (in seconds)
+    high 2000 us -> low 28 ms -> high 400 us -> low 1580 us -> high 400 us -> low 3580 us -> high 400 us ->
+    low 63.2 ms ->
+    high 2000 us -> low 28 ms -> high 400 us -> low 1580 us -> high 400 us -> low 3580 us -> high 400 us
+    
+Nikon IR command (in waves for 4.8 MHz clock)
+    example: 2000/26.0417 = 76.8 ~ 77
+    high 77 -> low delay 28 ms -> high 16 -> low 1580 us -> high 16 -> low 3580 us -> high 16 ->
+    low 63.2 ms ->
+    high 77 -> low delay 28 ms -> high 16 -> low 1580 us -> high 16 -> low 3580 us -> high 16 ->
+    
