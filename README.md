@@ -18,6 +18,7 @@ Makefile
 Electronic Components
 
 In this project I'm using an npn transistor kt315 because it is the most widespread transistor in Ukraine. It can be substituted by any other npn transistor.
+
 ----------------------------------------------------
 Programming the Microcontroller
 
